@@ -5,7 +5,7 @@ This repository contains bash scripts for deploying KVM Virtual Machine with Ubu
 I wanted to learn about KVM and have possibility to create lab/test VM's in automated way. This was starting idea behind that project.
 
 Scope:
-- ISO for Ubuntu server 18.04.3 (alternative server installer) is downloaded and modified for unattended installation with kickstart and preseed files.
+- ISO for Ubuntu server 18.04.4 (alternative server installer) is downloaded and modified for unattended installation with kickstart and preseed files.
 - VM in KVM environment is deployed and Ubuntu server is installed in it from prepared ISO.
 
 ## Requirements

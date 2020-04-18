@@ -5,10 +5,10 @@
 #Next ISO is prepared for unnatended installation with kickstart and preseed files.
 
 #URL from which iso will be downloaded (ubuntu alternative server installer)
-ISO_URL="http://cdimage.ubuntu.com/releases/18.04.3/release/ubuntu-18.04.3-server-amd64.iso"
+ISO_URL="http://cdimage.ubuntu.com/releases/18.04.4/release/ubuntu-18.04.4-server-amd64.iso"
 
 #Location and name for downloaded iso
-ISO_LOCATION="./ubuntu-18.04.3-server-amd64.iso"
+ISO_LOCATION="./ubuntu.iso"
 
 #Folder where downloaded iso will be mounted 
 ISO_MNT_DIR="/mnt"
@@ -17,7 +17,7 @@ ISO_MNT_DIR="/mnt"
 ISO_COPIED_FILES_DIR="./mod_iso"
 
 #Name and location for created unattended installation ISO file
-ISO_UNATTENDED_INSTALL="./unattended-install-ubuntu-18.04.3-server-amd64.iso"
+ISO_UNATTENDED_INSTALL="./unattended-install-ubuntu.iso"
 
 #Download iso if it is not present on the disk
 if [ -f "${ISO_LOCATION}" ]; then

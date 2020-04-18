@@ -31,7 +31,7 @@ VM_OS_VARIANT="ubuntu18.04"
 VM_DISK_LOCATION="/var/lib/libvirt/images"
 
 #Name and location for unattended installation ISO file
-ISO_UNATTENDED_INSTALL="./unattended-install-ubuntu-18.04.3-server-amd64.iso"
+ISO_UNATTENDED_INSTALL="./unattended-install-ubuntu.iso"
 
 #Create VM
 virt-install \
