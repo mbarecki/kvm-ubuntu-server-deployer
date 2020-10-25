@@ -48,7 +48,7 @@ password: test
 ```
 User test has sudo access.
 
-[SSH key](id_rsa_test.pub) is added to `test` user SSH `authorzied_keys`.
+[SSH key](id_rsa_test.pub) is added to `test` user SSH `authorized_keys`.
 
 Commands for adding related ssh private key to authentication agent:
 ```bash
