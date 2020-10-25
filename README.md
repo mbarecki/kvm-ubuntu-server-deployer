@@ -37,6 +37,7 @@ sudo ./create_iso.sh
 ./delete_vm.sh labsrv
 ```
 
+## Authentication
 Two accounts are available in created VM:
 ```
 username: root
@@ -46,6 +47,27 @@ username: test
 password: test
 ```
 User test has sudo access.
+
+[SSH key](id_rsa_test.pub) is added to SSH `authorzied_keys` in created VM.
+
+Commands for adding related ssh private key to authentication agent:
+```bash
+# Copy ssh private key to .ssh folder
+cp id_rsa_test ~/.ssh
+
+# Set file permissions and ownership
+chmod 600 ~/.ssh/id_rsa_test
+chown $USER:$USER ~/.ssh/id_rsa_test
+
+# Add SSH private key to authentication agent
+ssh-add ~/.ssh/id_rsa_test
+
+# Verify that key was added
+ssh-add -l
+
+# In case when message 'Could not open a connection to your authentication agent.' is received from ssh-add
+ssh-agent bash
+```
 
 SSH server is installed in created VM. 
 
@@ -63,3 +85,10 @@ https://computingforgeeks.com/virsh-commands-cheatsheet/
 ISO preparation for unattended Ubuntu Server installation:  
 https://askubuntu.com/questions/122505/how-do-i-create-a-completely-unattended-install-of-ubuntu  
 https://askubuntu.com/questions/16757/kickstart-file-is-ignored-by-the-installer  
+https://askubuntu.com/questions/777218/debugging-preseed-late-command-for-ubuntu-16-04-server-tee-not-found-vs-nonexis  
+
+BASH:  
+https://stackoverflow.com/questions/20622128/bash-scripting-redirection-not-working-why  
+
+SSH:  
+https://unix.stackexchange.com/questions/48863/ssh-add-complains-could-not-open-a-connection-to-your-authentication-agent/48868  
