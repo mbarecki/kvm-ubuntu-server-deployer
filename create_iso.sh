@@ -5,7 +5,7 @@
 #Next ISO is prepared for unnatended installation with kickstart and preseed files.
 
 #URL from which iso will be downloaded (ubuntu alternative server installer)
-ISO_URL="http://cdimage.ubuntu.com/releases/18.04.4/release/ubuntu-18.04.4-server-amd64.iso"
+ISO_URL="http://cdimage.ubuntu.com/releases/18.04.5/release/ubuntu-18.04.5-server-amd64.iso"
 
 #Location and name for downloaded iso
 ISO_LOCATION="./ubuntu.iso"
