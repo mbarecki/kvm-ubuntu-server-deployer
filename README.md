@@ -48,7 +48,7 @@ password: test
 ```
 User test has sudo access.
 
-[SSH key](id_rsa_test.pub) is added to SSH `authorzied_keys` in created VM.
+[SSH key](id_rsa_test.pub) is added to `test` user SSH `authorzied_keys`.
 
 Commands for adding related ssh private key to authentication agent:
 ```bash
