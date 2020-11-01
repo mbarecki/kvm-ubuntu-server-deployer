@@ -46,9 +46,9 @@ password: ChangeMe!
 username: test
 password: test
 ```
-User test has sudo access.
+User `test` has sudo access without password requirement.
 
-[SSH key](id_rsa_test.pub) is added to `test` user SSH `authorized_keys`.
+[SSH key](id_rsa_test.pub) is added to `test` user `authorized_keys`.
 
 Commands for adding related ssh private key to authentication agent:
 ```bash
