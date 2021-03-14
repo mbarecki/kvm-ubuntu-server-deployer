@@ -33,6 +33,9 @@ sudo ./create_iso.sh
 #Operating system will be installed from ISO prepared by create_iso.sh script
 ./create_vm.sh labsrv
 
+#Retrieve IP address of labsrv VM
+./get_vm_ip.sh labsrv
+
 #Delete VM with name labsrv
 ./delete_vm.sh labsrv
 ```
@@ -49,6 +52,9 @@ password: test
 User `test` has sudo access without password requirement.
 
 [SSH key](id_rsa_test.pub) is added to `test` user `authorized_keys`.
+
+***Note: SSH private key should be kept secret.  
+In this repository private key is added with related public key for test/lab purposes***
 
 Commands for adding related ssh private key to authentication agent:
 ```bash
