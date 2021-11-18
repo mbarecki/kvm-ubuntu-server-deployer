@@ -43,6 +43,12 @@ cp txt.cfg ${ISO_COPIED_FILES_DIR}/isolinux
 echo "Modify timeout value to 1 second in ${ISO_COPIED_FILES_DIR}/isolinux/isolinux.cfg"
 sed --in-place 's/timeout 300/timeout 10/' ${ISO_COPIED_FILES_DIR}/isolinux/isolinux.cfg
 
+#Modify isolinux.cfg
+echo "Modify default boot option in isolinux.cfg"
+sed --in-place 's/default vesamenu.c32/default install/' ${ISO_COPIED_FILES_DIR}/isolinux/isolinux.cfg
+echo "Delete ui option in isolinux.cfg"
+sed --in-place '/ui gfxboot bootlogo/d' ${ISO_COPIED_FILES_DIR}/isolinux/isolinux.cfg
+
 #Copy preseed file
 echo "Copy preseed.cfg file to ${ISO_COPIED_FILES_DIR}"
 cp ./preseed.cfg ${ISO_COPIED_FILES_DIR}
