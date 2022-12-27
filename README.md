@@ -7,16 +7,19 @@ I wanted to learn about KVM and have possibility to create lab/test VM's in auto
 Scope:
 - ISO for Ubuntu Bionic server is downloaded and modified for unattended installation with kickstart and preseed files.
 - ISO for Ubuntu Focal server is downloaded and modified for unattended installation with cloud-init config.
+- ISO for Ubuntu Jammy server is downloaded and modified for unattended installation with cloud-init config.
 - VM in KVM environment is deployed and Ubuntu server is installed in it from prepared ISO.
 
 Additional information can be found in files:
 - [Ubuntu Bionic installation](bionic-preseed/README.md)
 - [Ubuntu Focal installation](focal-autoinstall/README.md)
+- [Ubuntu Jammy installation](jammy-autoinstall/README.md)
 - [SSH access to created VM](./shared/ssh-information.md)
 
 ## Requirements
 KVM installed and listed tools available:
 - mkisofs  
+- xorriso  
 - wget
 - virsh 
 - virt-install 
