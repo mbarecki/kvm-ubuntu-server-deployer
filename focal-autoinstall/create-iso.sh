@@ -5,7 +5,7 @@
 #Next ISO is prepared for unnatended installation.
 
 #URL from which iso will be downloaded (ubuntu alternative server installer)
-ISO_URL="http://releases.ubuntu.com/20.04/ubuntu-20.04.3-live-server-amd64.iso"
+ISO_URL="http://releases.ubuntu.com/20.04/ubuntu-20.04.5-live-server-amd64.iso"
 
 #Location and name for downloaded iso
 ISO_LOCATION="./ubuntu.iso"
