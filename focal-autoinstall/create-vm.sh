@@ -21,9 +21,6 @@ VM_DISK_FORMAT="qcow2"
 #Network bridge to which VM will be connected
 VM_NETWORK_BRIDGE="virbr0"
 
-#os type which will be instaled in VM
-VM_OS_TYPE="linux"
-
 #os variant which will be instaled in VM
 VM_OS_VARIANT="ubuntu20.04"
 
@@ -38,7 +35,6 @@ virt-install \
 --name ${vm_name} \
 --ram ${VM_RAM} \
 --vcpus ${VM_VCPUS} \
---os-type ${VM_OS_TYPE} \
 --os-variant ${VM_OS_VARIANT} \
 --network bridge=${VM_NETWORK_BRIDGE} \
 --cdrom ${ISO_UNATTENDED_INSTALL} \
