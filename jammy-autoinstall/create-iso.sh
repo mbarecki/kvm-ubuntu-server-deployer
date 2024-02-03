@@ -5,7 +5,7 @@
 #Next ISO is prepared for unnatended installation.
 
 #URL from which iso will be downloaded
-ISO_URL="http://releases.ubuntu.com/22.04/ubuntu-22.04.1-live-server-amd64.iso"
+ISO_URL="http://releases.ubuntu.com/22.04/ubuntu-22.04.3-live-server-amd64.iso"
 
 #Location and name for downloaded iso
 ISO_LOCATION="./ubuntu.iso"
@@ -63,7 +63,7 @@ xorriso -as mkisofs \
   -partition_cyl_align off \
   -partition_offset 16 \
   --mbr-force-bootable \
-  -append_partition 2 28732ac11ff8d211ba4b00a0c93ec93b --interval:local_fs:2871452d-2879947d::'ubuntu.iso' \
+  -append_partition 2 28732ac11ff8d211ba4b00a0c93ec93b --interval:local_fs:4156048d-4166115d::'ubuntu.iso' \
   -appended_part_as_gpt \
   -iso_mbr_part_type a2a0d0ebe5b9334487c068b6b72699c7 \
   -c '/boot.catalog' \
@@ -73,9 +73,9 @@ xorriso -as mkisofs \
   -boot-info-table \
   --grub2-boot-info \
   -eltorito-alt-boot \
-  -e '--interval:appended_partition_2_start_717863s_size_8496d:all::' \
+  -e '--interval:appended_partition_2_start_1039012s_size_10068d:all::' \
   -no-emul-boot \
-  -boot-load-size 8496 \
+  -boot-load-size 10068 \
   -o ${ISO_UNATTENDED_INSTALL} ${ISO_COPIED_FILES_DIR} 
 
 #Unmount iso file
