@@ -5,7 +5,7 @@
 #Next ISO is prepared for unnatended installation.
 
 #URL from which iso will be downloaded
-ISO_URL="http://releases.ubuntu.com/22.04/ubuntu-22.04.3-live-server-amd64.iso"
+ISO_URL="https://releases.ubuntu.com/22.04/ubuntu-22.04.5-live-server-amd64.iso"
 
 #Location and name for downloaded iso
 ISO_LOCATION="./ubuntu.iso"
@@ -17,7 +17,7 @@ ISO_MNT_DIR="/mnt"
 ISO_COPIED_FILES_DIR="./mod_iso"
 
 #Name and location for created unattended installation ISO file
-ISO_UNATTENDED_INSTALL="./autoinstall-ubuntu-jammy.iso"
+ISO_UNATTENDED_INSTALL="/var/lib/libvirt/images/autoinstall-ubuntu-jammy.iso"
 
 #Download iso if it is not present on the disk
 if [ -f "${ISO_LOCATION}" ]; then

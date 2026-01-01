@@ -28,7 +28,7 @@ VM_OS_VARIANT="ubuntu22.04"
 VM_DISK_LOCATION="/var/lib/libvirt/images"
 
 #Name and location for unattended installation ISO file
-ISO_UNATTENDED_INSTALL="./autoinstall-ubuntu-jammy.iso"
+ISO_UNATTENDED_INSTALL="/var/lib/libvirt/images/autoinstall-ubuntu-jammy.iso"
 
 #Create VM
 virt-install \
