@@ -8,12 +8,14 @@ Scope:
 - ISO for Ubuntu Bionic server is downloaded and modified for unattended installation with kickstart and preseed files.
 - ISO for Ubuntu Focal server is downloaded and modified for unattended installation with cloud-init config.
 - ISO for Ubuntu Jammy server is downloaded and modified for unattended installation with cloud-init config.
+- ISO for Ubuntu Noble server is downloaded and modified for unattended installation with cloud-init config.
 - VM in KVM environment is deployed and Ubuntu server is installed in it from prepared ISO.
 
 Additional information can be found in files:
 - [Ubuntu Bionic installation](bionic-preseed/README.md)
 - [Ubuntu Focal installation](focal-autoinstall/README.md)
 - [Ubuntu Jammy installation](jammy-autoinstall/README.md)
+- [Ubuntu Noble installation](noble-autoinstall/README.md)
 - [SSH access to created VM](./shared/ssh-information.md)
 
 ## Requirements
